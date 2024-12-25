@@ -1,0 +1,8 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "title": "ToDo Api",
+        "description": "Tasks",
+        "version": "1.0.0"
+    }
+}

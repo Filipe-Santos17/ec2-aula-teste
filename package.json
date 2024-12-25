@@ -1,0 +1,46 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/src/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "test:unit": "vitest --dir src/tests/unit",
+    "test:e2e": "vitest run --dir src/tests/e2e",
+    "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "pg": "^8.12.0",
+    "sqlite3": "^5.1.7",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^22.5.0",
+    "@types/supertest": "^6.0.2",
+    "@types/swagger-ui-express": "^4.1.6",
+    "mysql": "^2.18.1",
+    "supertest": "^7.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.2.4",
+    "tsx": "^4.18.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
