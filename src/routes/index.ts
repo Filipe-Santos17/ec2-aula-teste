@@ -5,7 +5,7 @@ import controllerLogin from "../controllers/login.controller";
 import controllerTodo from "../controllers/todo.controller";
 
 import { validUserData, validUserId } from "../middlewares/pipes/userPipe";
-import { validUserLogin, validUserLoginSecondStep } from "../middlewares/pipes/loginPipe";
+import { validUserLogin } from "../middlewares/pipes/loginPipe";
 import { validTodoData, validTodoIdAndUserParams, validIdUserParam } from "../middlewares/pipes/todoPipe";
 import { validUserJWTToken } from "../middlewares/auth/authToken";
 
